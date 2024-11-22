@@ -3,11 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./styles/globals.css";
 import App from "./pages/app";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AuthLoginPage from "./pages/auth/login";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/auth/login",
+    element: <AuthLoginPage />,
   },
 ]);
 
